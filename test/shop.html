@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мерч</title>
+    <style type="text/css">
+        body {
+        font-family: 'Cera Pro', serif;
+        }
+        a:visited {
+        color: #000000;
+        }
+        a {
+        text-decoration: none;
+        }
+        p {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+        margin: 10px;
+        padding: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        }
+
+        header {
+        text-transform: uppercase;
+        font-size: 24px;
+        border-radius: 8px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(255, 228, 225);
+        }
+
+        table {
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 2px;
+        border-color: gray;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 80%;
+        }
+        .shop-content{
+        display: none;
+        position: absolute;
+        max-width: 150px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+        }
+
+        .shop {
+        text-decoration-line: underline;
+        position: relative;
+        display: inline-block;
+        }
+
+        #shop {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 40px;
+        border-radius: 8px;
+        border: 10px solid #FFB6C1;
+        }
+        .main-title{
+        width: 100%;
+        margin: 0;
+        color: black;
+        padding: 20px 0 20px 0;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Cera Pro', serif;
+        text-transform: uppercase;
+        text-decoration-line: underline;
+        text-decoration-color: #000000;
+        }
+        .product {
+        width: 400px;
+        height: 300px;
+        margin: 20px auto;
+        background: rgb(255, 255, 255);
+        padding: 25px;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Cera Pro', serif;
+        }
+        #st1 {
+        width: 30%;
+        margin-bottom: 20px;
+        }
+        #st2 {
+        width: 42%;
+        margin-bottom: 20px;
+        }
+        #st3 {
+        width: 42%;
+        margin-bottom: 20px;
+        }
+        #st4 {
+        width: 47%;
+        margin-bottom: 20px;
+        }
+        #st5 {
+        width: 47%;
+        margin-bottom: 20px;
+        }
+        #st6 {
+        width: 47%;
+        margin-bottom: 20px;
+        }
+        #ht1{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+        margin: 10px;
+        padding: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        }
+        #ht2{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+        margin: 10px;
+        padding: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        }
+        #ht3{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+        margin: 10px;
+        padding: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        }
+        #ht4{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+        margin: 10px;
+        padding: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        }
+        #ht5{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+        margin: 10px;
+        padding: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        }
+        #ht6{
+        text-decoration: none;
+        color: #000000;
+        font-weight: 200;
+        margin: 10px;
+        padding: 5px;
+        font-size: 24px;
+        text-transform: uppercase;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+        .dropdown-content{
+        display: none;
+        position: absolute;
+        max-width: 150px;
+        background-color: rgb(255, 228, 225);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+        }
+        .dropdown-content a {
+        color: black;
+        padding: 12px 12px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown:hover .dropdown-content {display: block;}
+
+        </style>
+</head>
+<body>
+<header align = "center">
+    <table width="100%" border = "0" cellspacing="3">
+        <tbody>
+        <tr>
+            <td colspan="1" align="top">
+                <img src="bg.jpg" height="200px">
+            </td>
+             <td colspan="1" align="top">
+                <img src="bg2.jpg" height="200px">
+            </td>
+             <td colspan="1" align="top">
+                <img src="bg3.jpg" height="200px">
+            </td>
+            <td colspan="1" align="top">
+                <img src="bg4.jpg" height="200px">
+            </td>
+            <td colspan="1" align="top">
+                <img src="bg5.jpg" height="200px">
+            </td>
+        </tr>
+        <tr>
+            <td width = "20%">
+                <div class = "index">
+                    <a href="index.html">ГЛАВНАЯ</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "characters">
+                    <a href="characters.html">Персонажи</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "seasons_anime">
+                    <a href="seasons_anime.html">Аниме адаптация</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "manga">
+                    <a href="manga.html">Манга</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "dropdown">
+                    <a href="shop.html">Мерч</a>
+                    <div class = "dropdown-content">
+                        <a href = "shop.html#toys">Мягкие Игрушки</a>
+                        <a href = "shop.html#figurines">Фигурки</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</header>
+<table id = "shop" width = "80%" align = "center" border = "0" background = "bg1.jpg">
+    <tbody>
+    <tr>
+        <td colspan="3">
+            <div id = "toys" class = "main-title">Мягкие игрушки</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class = "product">
+                <img id = "st1" src = "mch1.jpg">
+                <br><a id = "ht1" href="order.html">Игрушка "Сейлор Сатурн"</a>
+                <hr>
+                <p>700 р</p>
+            </div>
+        </td>
+             <td>
+            <div class = "product">
+                <img id = "st2" src = "mch11.jpg">
+                <br><a id = "ht2" href="order.html">Игрушка "Сейлор Юпитер"</a>
+                <hr>
+                <p>700 р</p>
+            </div>
+        </td>
+        <td>
+            <div class = "product">
+                <img id = "st3" src = "mch111.jpg">
+                <br><a id = "ht3" href = "order.html">Игрушка "Сейлор Мун"</a>
+                <hr>
+                <p>700 р</p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <div id = "figurines" class = "main-title">Фигурки</div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class = "product">
+                <img id = "st4" src = "f1.jpg">
+                <br><a id = "ht4" href="order.html">Фигурка "Чибиуса"</a>
+                <hr>
+                <p>2500 р</p>
+            </div>
+        </td>
+             <td>
+            <div class = "product">
+                <img id = "st5" src = "f2.jpg">
+                <br><a id = "ht5" href="order.html">Фигурка "Сейлор Венера"</a>
+                <hr>
+                <p>2500 р</p>
+            </div>
+        </td>
+        <td>
+            <div class = "product">
+                <img id = "st6" src = "f3.jpg">
+               <br> <a id = "ht6" href="order.html">Фигурка "Усаги"</a>
+                <hr>
+                <p>2500 р</p>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

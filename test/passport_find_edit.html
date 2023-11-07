@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+    <style type="text/css">
+        body {
+        background-image: url(venv/passport.jpg);
+        background-position: center-bottom;
+        background-repeat: no-repeat;
+        }
+        .block1 {
+        margin-left: 100px;
+        margin-top: 70px;
+        }
+        .block2 {
+        margin-left: 80px;
+        margin-top: 45px;
+        }
+        .block3 {
+        margin-left: 300px;
+        margin-top: -20px;
+        }
+        .block4 {
+        margin-left: 200px;
+        margin-top: 190px;
+        }
+        .block5 {
+        margin-left: 200px;
+        margin-top: 27px;
+        }
+        .block6 {
+        margin-left: 200px;
+        margin-top: 2px;
+        }
+        .block7 {
+        margin-left: 160px;
+        margin-top: 5px;
+        }
+        .block8 {
+        margin-left: 270px;
+        margin-top: -20px;
+        }
+        .block9 {
+        margin-left: 230px;
+        margin-top: 4px;
+        }
+        .photo {
+        margin-left: 25px;
+        margin-top:-115px;
+        }
+    </style>
+</head>
+<body>
+<div class = "block1">МВД ПО РЕСПУБЛИКЕ БУРЯТИЯ</div>
+<div class = "block2">03.03.2014</div>
+<div class = "block3">789-001</div>
+<div class = "block4">Зубкова</div>
+<div class = "block5">Вероника</div>
+<div class = "block6">Евгеньевна</div>
+<div class = "block7">Жен.</div>
+<div class = "block8">28.11.2000</div>
+<div class = "block9">Гор.Улан-Удэ <br> Респ. Бурятия</div>
+<div class = "photo"><img src = "passportPhoto.jpg"></div>
+<script>
+     function english() {
+      document.getElementsByClassName("block1")[0].innerHTML = "Ministry of Internal Affairs for the Republic of Buryatia";
+      document.getElementsByClassName("block4")[0].innerHTML = "Zubkova";
+      document.getElementsByClassName("block5")[0].innerHTML = "Veronika";
+      document.getElementsByClassName("block6")[0].innerHTML = "Evgenievna";
+      document.getElementsByClassName("block9")[0].innerHTML = "Ulan-Ude city <br> The Republic of Buryatia";
+      document.getElementsByClassName("block7")[0].innerHTML = "Female";
+    }
+
+    function russian() {
+        document.getElementsByClassName('block1')[0].innerHTML = "МВД ПО РЕСПУБЛИКЕ БУРЯТИЯ";
+        document.getElementsByClassName('block4')[0].innerHTML = "Зубкова";
+        document.getElementsByClassName('block5')[0].innerHTML = "Вероника";
+        document.getElementsByClassName('block6')[0].innerHTML = "Евгеньевна";
+        document.getElementsByClassName('block9')[0].innerHTML = "Гор.Улан-Удэ <br> Респ. Бурятия";
+        document.getElementsByClassName("block7")[0].innerHTML = "Жен.";
+    }
+
+</script>
+<button onclick="english()">Change to English</button>
+<button onclick="russian()">Change to Russian</button>
+<nav class="menu">
+  <ul>
+    <li><a href="passport.html" target="_blank">Считывание из DOM</a></li>
+    <li><a href="#" target="_blank">Алгоритмическая задача</a></li>
+  </ul>
+</nav>
+</body>
+</html>

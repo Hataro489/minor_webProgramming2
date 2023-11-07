@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sailor Moon</title>
+    <style type="text/css">
+        body {
+        font-family: 'Cera Pro', serif;
+        }
+        a:visited {
+        color: #000000;
+        }
+        a {
+        text-decoration: none;
+        }
+
+        header {
+        text-transform: uppercase;
+        font-size: 24px;
+        border-radius: 8px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(255, 228, 225);
+        }
+
+        table {
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 2px;
+        border-color: gray;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 80%;
+        }
+
+        .index {
+        text-decoration-line: underline;
+        }
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+        .dropdown-content{
+        display: none;
+        position: absolute;
+        max-width: 150px;
+        background-color: rgb(255, 228, 225);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+        }
+        .dropdown-content a {
+        color: black;
+        padding: 12px 12px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .sailor-moonch {
+        width: 250px;
+        margin: 20px 15px;
+        background: rgb(175, 238, 238);
+        padding: 15px;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Сera Pro", serif;
+        text-transform: normal;
+        }
+
+        .sailormoon{
+        position: relative;
+        overflow: hidden;
+        }
+        .sailormoon_title p{
+        text-decoration: none;
+        font-weight: 200;
+        margin: 15px 0px 5px;
+        padding-bottom: 7px;
+        display: block;
+        position: relative;
+        font-family: 'Сera Pro';
+        }
+        </style>
+</head>
+<body>
+<header align = "center">
+    <table width="100%" border = "0" cellspacing="3">
+        <tbody>
+        <tr>
+            <td colspan="1" align="top">
+                <img src="bg.jpg" height="200px">
+            </td>
+             <td colspan="1" align="top">
+                <img src="bg2.jpg" height="200px">
+            </td>
+             <td colspan="1" align="top">
+                <img src="bg3.jpg" height="200px">
+            </td>
+            <td colspan="1" align="top">
+                <img src="bg4.jpg" height="200px">
+            </td>
+            <td colspan="1" align="top">
+                <img src="bg5.jpg" height="200px">
+            </td>
+        </tr>
+        <tr>
+            <td width = "20%">
+                <div class = "index">
+                    <a href="index.html">ГЛАВНАЯ</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "characters">
+                    <a href="characters.html">Персонажи</a>
+                </div>
+            </td>
+
+            <td width = "20%">
+                <div class = "seasons_anime">
+                    <a href="seasons_anime.html">Аниме адаптация</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "manga">
+                    <a href="manga.html">Манга</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "dropdown">
+                    <a href="shop.html">Мерч</a>
+                    <div class = "dropdown-content">
+                        <a href = "shop.html#toys">Мягкие Игрушки</a>
+                        <a href = "shop.html#figurines">Фигурки</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</header>
+<table width="80%" align="center" border="0">
+    <tbody>
+    <tr>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href="characters.html">
+                        <img width="100%" src = "i2.jpg">
+                    </a>
+                    <div class = "sailormoon_title">
+                    <p>
+                        Список персонажей
+                    </p>
+                </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href="seasons_anime.html">
+                        <img width="100%" src = "i22.jpg">
+                    </a>
+                    <div class = "sailormoon_title">
+                    <p>
+                        Об аниме адаптации
+                    </p>
+                </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href="manga.html">
+                        <img width="100%" src = "i1.jpg">
+                    </a>
+                    <div class = "sailormoon_title">
+                    <p>
+                        О манге
+                    </p>
+                </div>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href="shop.html">
+                        <img width="100%" src = "i11.jpg">
+                    </a>
+                    <div class = "sailormoon_title">
+                    <p>
+                        Магазин
+                    </p>
+                </div>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

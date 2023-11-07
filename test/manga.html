@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Манга</title>
+    <style type="text/css">
+        body {
+        font-family: 'Cera Pro', serif;
+        }
+        a:visited {
+        color: #000000;
+        }
+        a {
+        text-decoration: none;
+        }
+
+        header {
+        text-transform: uppercase;
+        font-size: 24px;
+        border-radius: 8px;
+        padding: 10px 10px 10px 10px;
+        background-color: rgb(255, 228, 225);
+        }
+
+        table {
+        display: table;
+        border-collapse: separate;
+        box-sizing: border-box;
+        text-indent: initial;
+        border-spacing: 2px;
+        border-color: gray;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        width: 80%;
+        }
+        .manga {
+        text-decoration-line: underline;
+        }
+        table {
+        border-collapse: separate;
+        text-indent: initial;
+        border-spacing: 2px;
+        }
+        .dropdown-content{
+        display: none;
+        position: absolute;
+        max-width: 150px;
+        background-color: rgb(255, 228, 225);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 5;
+        }
+        .dropdown-content a {
+        color: black;
+        padding: 12px 12px;
+        text-decoration: none;
+        display: block;
+        }
+        .dropdown:hover .dropdown-content {display: block;}
+        .seasons {
+        width: 100%;
+        margin: 10px auto;
+        background: rgb(175, 238, 238);
+        color: rgb(37, 37, 37);
+        padding: 15px;
+        font-family: 'Sera Pro', serif;
+        text-align: left;
+        font-size: 18px;
+        text-transform: none;
+        border-radius: 8px;
+        }
+        p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        }
+        #season1 {
+        text-align: center;
+        font-weight: 200;
+        }
+        #season2 {
+        text-align: center;
+        font-weight: 200;
+        }
+        #season3 {
+        text-align: center;
+        font-weight: 200;
+        }
+        #season4 {
+        text-align: center;
+        font-weight: 200;
+        }
+        #season5 {
+        text-align: center;
+        font-weight: 200;
+        }
+        ol {
+        display: block;
+        list-style-type: decimal;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        }
+        li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        }
+        .sailor-moonch {
+        width: 250px;
+        margin: 20px 15px;
+        background: rgb(175, 238, 238);
+        padding: 15px;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Sera Pro", serif;
+        text-transform: normal;
+        }
+        .sailormoon{
+        position: relative;
+        overflow: hidden;
+        }
+        ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        }
+        </style>
+</head>
+<body>
+<header align = "center">
+    <table width="100%" border = "0" cellspacing="3">
+        <tbody>
+        <tr>
+            <td colspan="1" align="top">
+                <img src="bg.jpg" height="200px">
+            </td>
+             <td colspan="1" align="top">
+                <img src="bg2.jpg" height="200px">
+            </td>
+             <td colspan="1" align="top">
+                <img src="bg3.jpg" height="200px">
+            </td>
+            <td colspan="1" align="top">
+                <img src="bg4.jpg" height="200px">
+            </td>
+            <td colspan="1" align="top">
+                <img src="bg5.jpg" height="200px">
+            </td>
+        </tr>
+        <tr>
+            <td width = "20%">
+                <div class = "index">
+                    <a href="index.html">ГЛАВНАЯ</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "characters">
+                    <a href="characters.html">Персонажи</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "seasons_anime">
+                    <a href="seasons_anime.html">Аниме адаптация</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "manga">
+                    <a href="manga.html">Манга</a>
+                </div>
+            </td>
+            <td width = "20%">
+                <div class = "dropdown">
+                    <a href="shop.html">Мерч</a>
+                    <div class = "dropdown-content">
+                        <a href = "shop.html#toys">Мягкие Игрушки</a>
+                        <a href = "shop.html#figurines">Фигурки</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</header>
+<hr>
+<table width="90%" align="center", border = "0">
+    <tbody>
+    <tr>
+        <td colspan="3">
+            <div class = "seasons">
+                <p id = "season1">
+                    Первая арка манги повествует о борьбе с Тёмным Королевством и включает в себя акты 1-13 в первом издании
+                    и акты 1-14 в последующих изданиях. В конце последнего акта начинается вторая арка.
+                    На первой арке основаны первый сезон аниме 1992 года, игровой телесериал и первый сезон аниме 2014 года.
+                </p>
+                <ul>
+                     Главы:
+                    <li>
+                        Акт 1 Усаги — Сейлор Мун
+                    </li>
+                    <li>
+                        Акт 2 Ами — Сейлор Меркурий
+                    </li>
+                    <li>
+                        Акт 3 Рэй — Сейлор Марс
+                    </li>
+                    <li>
+                        Акт 4 Бал-маскарад
+                    </li>
+                    <li>
+                        Акт 5 Макото — Сейлор Юпитер
+                    </li>
+                    <li>
+                        Акт 6 Таксидо Камен — Такседо Маск
+                    </li>
+                        <li>
+                        Акт 7 Мамору Чиба — Такседо Маск
+                    </li>
+                    <li>
+                        Акт 8 Минако — Сейлор Ви
+                    </li>
+                    <li>
+                        Акт 9 Серенити — Принцесса
+                    </li>
+                    <li>
+                        Акт 10 Луна
+                    </li>
+                    <li>
+                        Акт 11 Новая встреча — Эндимион
+                    </li>
+                    <li>
+                        Акт 12 Враг — королева Металия (Ранее — конец Акт 11 Новая встреча...)
+                    </li>
+                        <li>
+                        Акт 13 Решающая битва — Реинкарнация
+                    </li>
+                    <li>
+                        Акт 14 Конец и начало — Маленький незнакомец
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m1.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m11.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m111.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <div class = "seasons">
+                <p id = "season2">
+                  Вторая арка повествует о борьбе с Семейством Чёрной Луны и включает акты 13-23 в первом издании
+                    и акты 14-26 в последующих изданиях. На ней основаны второй сезон аниме 1992 года
+                    и второй сезон аниме 2014 года.
+                </p>
+                <ul>
+                     Главы:
+                    <li>
+                        Акт 14 Конец и начало — Маленький незнакомец
+                    </li>
+                    <li>
+                        Акт 15 Проникновение — Сейлор Марс
+                    </li>
+                    <li>
+                        Акт 16 Похищение — Сейлор Меркурий
+                    </li>
+                    <li>
+                        Акт 17 Тайна — Сейлор Юпитер
+                    </li>
+                    <li>
+                        Акт 18 Вторжение — Сейлор Венера
+                    </li>
+                    <li>
+                        Акт 19 Искажение времени — Сейлор Плутон
+                    </li>
+                        <li>
+                        Акт 20 Хрустальный Токио — Король Эндимион
+                    </li>
+                    <li>
+                        Акт. 21 Осложнение — Немезида (Ранее — начало Акт 20 Немезида — Осложнение)
+                    </li>
+                    <li>
+                        Акт. 22 Ожидания — Немезида (Ранее — конец Акт 20 Немезида — Осложнение)
+                    </li>
+                    <li>
+                        Акт. 23 Тайные манёвры — Мудрец
+                    </li>
+                    <li>
+                        Акт. 24 Наступление — Чёрная Леди
+                    </li>
+                    <li>
+                        Акт. 25 Противостояние — Призрак Смерти (Ранее — начало Акт. 23 Возрождение...)
+                    </li>
+                        <li>
+                        Акт. 26 Возрождение — Без конца (Ранее — конец Акт. 23 Возрождение...)
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m2.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m22.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m222.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <div class = "seasons">
+                <p id = "season3">
+                    Третья арка повествует о борьбе с Апостолами Смерти и включает акты 24-33 в первом издании
+                    и акты 27-38 в последующих изданиях. На ней основаны третий сезон аниме 1992 года и третий сезон аниме 2014 года.
+                </p>
+                <ul>
+                     Главы:
+                    <li>
+                        Акт 27 Бесконечность 1 Предчувствие
+                    </li>
+                    <li>
+                        Акт 28 Бесконечность 2 Круги на воде
+                    </li>
+                    <li>
+                        Акт 29 Бесконечность 3 Двое — Новые воительницы
+                    </li>
+                    <li>
+                        Акт 30 Бесконечность 4 Сейлор Уран — Харука Тэно, Сейлор Нептун — Мичиру Кайо
+                    </li>
+                    <li>
+                        Акт 31 Бесконечность 5 Сейлор Плутон — Сецуна Мэйо
+                    </li>
+                    <li>
+                        Акт 32 Бесконечность 6 Три воительницы
+                    </li>
+                        <li>
+                        Акт 33 Бесконечность 7 Превращение — Супер Сейлор Мун
+                    </li>
+                    <li>
+                        Акт 34
+                    </li>
+                    <li>
+                        Акт 35
+                    </li>
+                    <li>
+                        Акт 36 (Ранее — начало Акт 33)
+                    </li>
+                    <li>
+                        Акт 37 (Ранее — середина Акт 33)
+                    </li>
+                    <li>
+                        Акт 38 (Ранее — конец Акт 33 и начало Акт 34)
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m3.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m33.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m333.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <div class = "seasons">
+                <p id = "season4">
+                    Четвёртая арка повествует о борьбе с Цирком Мёртвой Луны и включает акты 34-42
+                    в первом издании и акты 39-49 в последующих изданиях.
+                    На ней основан четвертый сезон аниме 1992 года и фильм "Вечная Сейлор Мун".
+                </p>
+                <ul>
+                     Главы:
+                    <li>
+                        Акт 39 (Ранее — середина и конец Акт 34)
+                    </li>
+                    <li>
+                       Акт 40
+                    </li>
+                    <li>
+                        Акт 41
+                    </li>
+                    <li>
+                        Акт 42
+                    </li>
+                    <li>
+                        Акт 43
+                    </li>
+                    <li>
+                        Акт 44 (Ранее — начало Акт 39)
+                    </li>
+                        <li>
+                        Акт 45 (Ранее — конец Акт 39)
+                    </li>
+                    <li>
+                        Акт 46
+                    </li>
+                    <li>
+                        Акт 47 (Ранее — начало Акт 41)
+                    </li>
+                    <li>
+                        Акт 48 (Ранее — конец Акт 41)
+                    </li>
+                    <li>
+                        Акт 49
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m4.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m44.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m444.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <div class = "seasons">
+                <p id = "season5">
+                    Пятая арка повествует о борьбе с Теневой Галактикой
+                    и включает акты 43-52 в первом издании и акты 50-60
+                    в последующих изданиях. На ней основан пятый сезон аниме 1992 года и фильм "Сейлор Мун Космос"
+                </p>
+                <ul>
+                     Главы:
+                    <li>
+                        Акт 50 Звёзды 1
+                    </li>
+                    <li>
+                       Акт 51 Звёзды 2
+                    </li>
+                    <li>
+                        Акт 52 Звёзды 3 (Ранее — начало Акт 45 Звёзды 3)
+                    </li>
+                    <li>
+                        Акт 53 Звёзды 4 (Ранее — конец Акт 45 Звёзды 3)
+                    </li>
+                    <li>
+                        Акт 54 Звёзды 5
+                    </li>
+                    <li>
+                        Акт 55 Звёзды 6
+                    </li>
+                        <li>
+                        Акт 56 Звёзды 7
+                    </li>
+                    <li>
+                        Акт 57 Звёзды 8
+                    </li>
+                    <li>
+                        Акт 58 Звёзды 9
+                    </li>
+                    <li>
+                        Акт 59 Звёзды 10
+                    </li>
+                    <li>
+                        Акт 60 Звёзды 11
+                    </li>
+                </ul>
+            </div>
+        </td>
+    </tr>
+    <tr align="center">
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m5.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m55.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+        <td>
+            <div class = "sailor-moonch">
+                <div class = "sailormoon">
+                    <a href = "#">
+                    <img width = "100%" src="m555.jpg">
+                    </a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<hr>
+</body>
+</html>

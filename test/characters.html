@@ -2,255 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href = "style.css" rel = "stylesheet">
     <title>Персонажи</title>
-    <style type="text/css">
-        body {
-        font-family: 'Cera Pro', serif;
-        }
-        a:visited {
-        color: #000000;
-        }
-        a {
-        text-decoration: none;
-        }
-
-        header {
-        text-transform: uppercase;
-        font-size: 24px;
-        border-radius: 8px;
-        padding: 10px 10px 10px 10px;
-        background-color: rgb(255, 228, 225);
-        }
-        footer {
-        text-align: center;
-        font-size: 14px;
-        text-transform: uppercase;
-        border-radius: 8px;
-        padding: 10px 10px 10px 10px;
-        background-color: rgb(255, 228, 225);
-        border: 2px solid #000000;
-        }
-
-        table {
-        display: table;
-        border-collapse: separate;
-        box-sizing: border-box;
-        text-indent: initial;
-        border-spacing: 2px;
-        border-color: gray;
-        border-top-width: 0px;
-        border-bottom-width: 0px;
-        border-left-width: 0px;
-        border-right-width: 0px;
-        margin-inline-start: auto;
-        margin-inline-end: auto;
-        width: 80%;
-        }
-
-        .characters {
-        text-decoration-line: underline;
-        }
-
-        .sailor-moonch {
-        width: 250px;
-        margin: 20px 15px;
-        background: rgb(175, 238, 238);
-        padding: 15px;
-        text-align: center;
-        font-size: 24px;
-        font-family: "Сera Pro", serif;
-        text-transform: normal;
-        }
-        .sailormoon{
-        position: relative;
-        overflow: hidden;
-        }
-
-        .sailormoon_title p{
-        text-decoration: none;
-        font-weight: 200;
-        margin: 15px 0px 5px;
-        padding-bottom: 7px;
-        display: block;
-        position: relative;
-        font-family: "Сera Pro";
-        }
-        .dropdown-content{
-        display: none;
-        position: absolute;
-        max-width: 150px;
-        background-color: rgb(255, 228, 225);
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 5;
-        }
-        .dropdown-content a {
-        color: black;
-        padding: 12px 12px;
-        text-decoration: none;
-        display: block;
-        }
-        .dropdown:hover .dropdown-content {display: block;}
-        </style>
 </head>
 <body>
-<header align = "center">
-    <table width="100%" border = "0" cellspacing="3">
-        <tbody>
-        <tr>
-            <td colspan="1" align="top">
-                <img src="bg.jpg" height="200px">
-            </td>
-             <td colspan="1" align="top">
-                <img src="bg2.jpg" height="200px">
-            </td>
-             <td colspan="1" align="top">
-                <img src="bg3.jpg" height="200px">
-            </td>
-            <td colspan="1" align="top">
-                <img src="bg4.jpg" height="200px">
-            </td>
-            <td colspan="1" align="top">
-                <img src="bg5.jpg" height="200px">
-            </td>
-        </tr>
-        <tr>
-            <td width = "20%">
-                <div class = "index">
-                    <a href="index.html">ГЛАВНАЯ</a>
-                </div>
-            </td>
-            <td width = "20%">
-                <div class = "characters">
-                    <a href="characters.html">Персонажи</a>
-                </div>
-            </td>
-            <td width = "20%">
-                <div class = "seasons_anime">
-                    <a href="seasons_anime.html">Аниме адаптация</a>
-                </div>
-            </td>
-            <td width = "20%">
-                <div class = "manga">
-                    <a href="manga.html">Манга</a>
-                </div>
-            </td>
-            <td width = "20%">
-                <div class = "dropdown">
-                    <a href="shop.html">Мерч</a>
-                    <div class = "dropdown-content">
-                        <a href = "shop.html#toys">Мягкие Игрушки</a>
-                        <a href = "shop.html#figurines">Фигурки</a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+<header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+     <img src="bg.jpg" width="200px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="bg2.jpg" width="200px">
+        <img src="bg3.jpg" width="200px">
+        <img src="bg4.jpg" width="200px">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="characters.html">Персонажи</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="seasons_anime.html">Аниме-адаптация</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="manga.html">Манга</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Мерч
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shop.html#toys">Мягкие игрушки</a></li>
+            <li><a class="dropdown-item" href="shop.html#figurines">Фигурки</a></li>
+            <li><a class="dropdown-item" href="shop.html#cups">Кружки</a></li>
+            <li><a class="dropdown-item" href="shop.html#gas">Газировка</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 </header>
-<table width = "80%" align = "center" border = "0">
-    <tbody>
-    <tr>
-    <td>
-        <div class = "sailor-moonch">
-            <div class = "sailormoon">
-                <a href = "#">
-                    <img width = "100%"   src="sm.jpg">
-                </a>
-                <div class = "sailormoon_title">
-                    <p>
-                        Сейлор Мун — воинская форма Усаги Цукино. Лидер и главный воин в команде Сейлор-воинов.
-                    </p>
-                </div>
-            </div>
+<main>
+    <div class="card-group">
+    <div class="card">
+         <a href = "#">
+            <img src="sm.jpg" class="card-img-top" title="Нажмите, чтобы перейти к началу страницы">
+        </a>
+    <div class="card-body">
+      <p class="card-text">Сейлор Мун — воинская форма Усаги Цукино. Лидер и главный воин в команде Сейлор-воинов.</p>
+    </div>
+  </div>
+  <div class="card">
+    <a href = "#">
+        <img src="smc.jpg" class="card-img-top" title="Нажмите, чтобы перейти к началу страницы">
+    </a>
+    <div class="card-body">
+       <p class="card-text"> Сейлор Меркурий — первый член команды героев, обнаруженный Сейлор Мун. Она является «мозгом» команды воинов.</p>
+    </div>
+  </div>
+  <div class="card">
+    <a href = "#">
+        <img src="sms.jpg" class="card-img-top" title="Нажмите, чтобы перейти к началу страницы">
+    </a>
+    <div class="card-body">
+      <p class="card-text">Сейлор Марс — воинская форма Рэй Хино. Чаще всего, первой атакует врагов.</p>
+    </div>
+  </div>
+</div>
+    <div class="card-group">
+    <div class="card">
+         <a href = "#">
+            <img src="sj.jpg" class="card-img-top" title="Нажмите, чтобы перейти к началу страницы">
+        </a>
+    <div class="card-body">
+      <p class="card-text">Сейлор Юпитер — воинская форма Макото Кино. Четвёртый воин в команде Сейлор Мун, но пятый найденный кошками и пробуждённый.</p>
+    </div>
+  </div>
+  <div class="card">
+    <a href = "#">
+        <img src="sv.jpg" class="card-img-top" title="Нажмите, чтобы перейти к началу страницы">
+    </a>
+    <div class="card-body">
+       <p class="card-text"> Сейлор Венера — воинская форма Минако Айно. Её планета — покровительница любви и красоты Венера.</p>
+    </div>
+  </div>
+  <div class="card">
+    <a href = "#">
+        <img src="schm.jpg" class="card-img-top" title="Нажмите, чтобы перейти к началу страницы">
+    </a>
+    <div class="card-body">
+      <p class="card-text">Сейлор Чиби Мун - будущая принцесса Земли 30-го века и наследница Усаги Цукино.</p>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+    <div class="card text-center">
+        <div class="card-body">
+            <a href="https://t.me/vrnkkkk" class="btn btn-primary" target="_blank">Telegram</a>
         </div>
-    </td>
-        <td>
-            <div class = "sailor-moonch">
-            <div class = "sailormoon">
-                <a href = "#">
-                    <img width = "100%"   src="smc.jpg">
-                </a>
-                <div class = "sailormoon_title">
-                    <p>
-                        Сейлор Меркурий — первый член команды героев, обнаруженный Сейлор Мун. Она является «мозгом» команды воинов.
-                    </p>
-                </div>
-            </div>
-        </div>
-        </td>
-        <td>
-            <div class = "sailor-moonch">
-            <div class = "sailormoon">
-                <a href = "#">
-                    <img width = "100%"   src="sms.jpg">
-                </a>
-                <div class = "sailormoon_title">
-                    <p>
-                    Сейлор Марс — воинская форма Рэй Хино. Чаще всего, первой атакует врагов.
-                    </p>
-                </div>
-            </div>
-        </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        <div class = "sailor-moonch">
-            <div class = "sailormoon">
-                <a href = "#">
-                    <img width = "100%"   src="sj.jpg">
-                </a>
-                <div class = "sailormoon_title">
-                    <p>
-                        Сейлор Юпитер — воинская форма Макото Кино. Четвёртый воин в команде Сейлор Мун, но пятый найденный кошками и пробуждённый.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </td>
-        <td>
-            <div class = "sailor-moonch">
-            <div class = "sailormoon">
-                <a href = "#">
-                    <img width = "100%"   src="sv.jpg">
-                </a>
-                <div class = "sailormoon_title">
-                    <p>
-                        Сейлор Венера — воинская форма Минако Айно. Её планета — покровительница любви и красоты Венера.
-                    </p>
-                </div>
-            </div>
-        </div>
-        </td>
-        <td>
-            <div class = "sailor-moonch">
-            <div class = "sailormoon">
-                <a href = "#">
-                    <img width = "100%"   src="schm.jpg">
-                </a>
-                <div class = "sailormoon_title">
-                    <p>
-                    Сейлор Чиби Мун - будущая принцесса Земли 30-го века и наследница Усаги Цукино
-                    </p>
-                </div>
-            </div>
-        </div>
-        </td>
-    </tr>
-    </tbody>
-</table>
-    <footer>
-    <table border = "0" align="center" width = "80%">
-        <tbody>
-        <tr>
-            <td colspan="2">
-                <a href="https://t.me/vrnkkkk" target="_blank">
-                    Telegram
-                </a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+    </div>
 </footer>
 </body>
 </html>

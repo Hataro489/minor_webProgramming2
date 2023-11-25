@@ -1,238 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href = "style.css" rel = "stylesheet">
     <title>Оформить заказ</title>
-     <style type="text/css">
-        body {
-        font-family: 'Cera Pro', serif;
-        }
-        a:visited {
-        color: #000000;
-        }
-        a {
-        text-decoration: none;
-        }
-
-        header {
-        text-transform: uppercase;
-        font-size: 24px;
-        border-radius: 8px;
-        padding: 10px 10px 10px 10px;
-        background-color: rgb(255, 228, 225);
-        }
-         footer {
-        text-align: center;
-        font-size: 14px;
-        text-transform: uppercase;
-        border-radius: 8px;
-        padding: 10px 10px 10px 10px;
-        background-color: rgb(255, 228, 225);
-        border: 2px solid #000000;
-        }
-
-        table {
-        display: table;
-        border-collapse: separate;
-        box-sizing: border-box;
-        text-indent: initial;
-        border-spacing: 2px;
-        border-color: gray;
-        border-top-width: 0px;
-        border-bottom-width: 0px;
-        border-left-width: 0px;
-        border-right-width: 0px;
-        margin-inline-start: auto;
-        margin-inline-end: auto;
-        width: 80%;
-        }
-        .dropdown-content{
-        display: none;
-        position: absolute;
-        max-width: 150px;
-        background-color: rgb(255, 228, 225);
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 5;
-        }
-        .dropdown-content a {
-        color: black;
-        padding: 12px 12px;
-        text-decoration: none;
-        display: block;
-        }
-        .dropdown:hover .dropdown-content {display: block;}
-
-         #main{
-         display: flex;
-         }
-
-         #form {
-        margin: 40px 40px;
-        padding: 10px 40px;
-        background: url(bg1.jpg);
-        text-align: left;
-        border: thin solid #c0a97a;
-        border-radius: 5px;
-        width: 50%;
-        display: inline-block;
-         }
-         .placing{
-        text-align: center;
-        vertical-align: middle;
-        font-size: 30px;
-        background-color: rgb(255, 228, 225);
-        padding: 20px 0 20px 0;
-        margin: 20px 0 0 0;
-        width: 100%;
-        border-radius: 5px;
-        text-transform: uppercase;
-        border: thin solid #c0a97a;
-        }
-         .formblock {
-        padding: 20px;
-        }
-         input {
-        margin: 10px;
-        border-radius: 5px;
-        height: 20px;
-        }
-         button {
-        margin: 0 20px 40px 20px;
-        padding: 0 10px;
-        border: thin solid #92815f;
-        background-color: rgb(255, 228, 225);
-        font-size: 20px;
-        height: 50px;
-        border-radius: 5px;
-        }
-         select {
-        margin: 10px;
-        font-size: 16px;
-        font-family: 'Cera Pro', serif;
-        }
-         option {
-        font-weight: normal;
-        display: block;
-        white-space-collapse: collapse;
-        text-wrap: nowrap;
-        min-height: 1.2em;
-        padding: 0px 2px 1px;
-        }
-        </style>
 </head>
 <body>
-<header align = "center">
-    <table width="100%" border = "0" cellspacing="3">
-        <tbody>
-        <tr>
-            <td colspan="1" align="top">
-                <img src="bg.jpg" height="200px">
-            </td>
-             <td colspan="1" align="top">
-                <img src="bg2.jpg" height="200px">
-            </td>
-             <td colspan="1" align="top">
-                <img src="bg3.jpg" height="200px">
-            </td>
-            <td colspan="1" align="top">
-                <img src="bg4.jpg" height="200px">
-            </td>
-            <td colspan="1" align="top">
-                <img src="bg5.jpg" height="200px">
-            </td>
-        </tr>
-        <tr>
-            <td width = "20%">
-                <div class = "index">
-                    <a href="index.html">ГЛАВНАЯ</a>
-                </div>
-            </td>
-            <td width = "20%">
-                <div class = "characters">
-                    <a href="characters.html">Персонажи</a>
-                </div>
-            </td>
-
-            <td width = "20%">
-                <div class = "seasons_anime">
-                    <a href="seasons_anime.html">Аниме адаптация</a>
-                </div>
-            </td>
-            <td width = "20%">
-                <div class = "manga">
-                    <a href="manga.html">Манга</a>
-                </div>
-            </td>
-            <td width = "20%">
-                <div class = "dropdown">
-                    <a href="shop.html">Мерч</a>
-                    <div class = "dropdown-content">
-                        <a href = "shop.html#toys">Мягкие Игрушки</a>
-                        <a href = "shop.html#figurines">Фигурки</a>
-                    </div>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+<header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+     <img src="bg.jpg" width="200px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="bg2.jpg" width="200px">
+        <img src="bg3.jpg" width="200px">
+        <img src="bg4.jpg" width="200px">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="characters.html">Персонажи</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="seasons_anime.html">Аниме-адаптация</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="manga.html">Манга</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active"  href="shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Мерч
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="shop.html#toys">Мягкие игрушки</a></li>
+            <li><a class="dropdown-item" href="shop.html#figurines">Фигурки</a></li>
+            <li><a class="dropdown-item" href="shop.html#cups">Кружки</a></li>
+            <li><a class="dropdown-item" href="shop.html#gas">Газировка</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 </header>
-<div id = "main">
-    <div id = "form">
-        <form action="https://www.yandex.ru/search?" method = "get" target="_blank">
-            <div class = "placing">
+<main>
+    <form action="https://www.yandex.ru/search?" method = "get" target="_blank">
+        <div class = "placing">
                 Оформление заказа:
             </div>
-            <div class = "formblock">
-                <br>
-                Фамилия:
-                <input type = "text" placeholder="Фамилия" name="surname">
-                <br>
-                Имя:
-                <input type = "text" placeholder="Имя" name="name">
-                <br>
-                Отчество:
-                <input type = "text" placeholder="Отчество" name="patronymic">
-                <br>
-                Контактный телефон:
-                <input type = "text" placeholder="+7 999 999 99 99" name="phone">
-                <br>
-                E-mail:
-                <input type = "text" placeholder="E-mail@.com" name="email">
-                <br>
-                Адрес:
-                <input type = "text" placeholder="г. Москва, ул. Ленина, д. 10, кв. 56" name="address">
-                <br>
-                Почтовый индекс:
-                <input type = "text" placeholder="00000" name="index">
-            </div>
-            <div class = "formblock">
-                Выберите товар:
-                <select>
-                    <option>Игрушка "Сейлор Сатурн"</option>
-                    <option>Игрушка "Сейлор Юпитер"</option>
-                    <option>Игрушка "Сейлор Мун"</option>
-                    <option>Игрушка "Фигурка Чибиуса"</option>
-                    <option>Игрушка "Фигурка Сейлор Венера"</option>
-                    <option>Игрушка "Фигурка Усаги"</option>
-                </select>
-            </div>
-            <button type = "submit">Заказать</button>
-            <button type="reset">Сбросить</button>
-        </form>
-    </div>
+    <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">Фамилия</span>
+  <input type="text" class="form-control" placeholder="Иванова" name="Иванова" aria-describedby="basic-addon1">
 </div>
-    <footer>
-    <table border = "0" align="center" width = "80%">
-        <tbody>
-        <tr>
-            <td colspan="2">
-                <a href="https://t.me/vrnkkkk" target="_blank">
-                    Telegram
-                </a>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon2">Имя</span>
+  <input type="text" class="form-control" placeholder="Екатерина" name="Екатерина" aria-describedby="basic-addon2">
+</div>
+<div class="mb-3">
+  <div class="input-group">
+    <span class="input-group-text" id="basic-addon3">Отчество</span>
+    <input type="text" class="form-control" placeholder="Андреевна" name="Андреевна" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+  </div>
+</div>
+<div class="input-group mb-3">
+  <span class="input-group-text">Контактный телефон</span>
+  <input type="number" class="form-control" placeholder="+7999 999 99 99" name="+7999 999 99 99">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">E-mail</span>
+    <input type="text" class="form-control" placeholder="Email@.ru" name="Email.ru">
+  <span class="input-group-text">Адрес</span>
+  <input type="text" class="form-control" placeholder="г. Москва, ул. Ленина, д. 10, кв. 56" name="г. Москва, ул. Ленина, д. 10, кв. 56">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">Почтовый индекс</span>
+  <input type="number" class="form-control" placeholder="670050" name="670050">
+</div>
+        <div class = "placing">
+                Выберите товар:
+            </div>
+        <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Игрушка "Сейлор Сатурн"' id="inlineRadio1" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Игрушка "Сейлор Сатурн"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Игрушка "Сейлор Юпитер"' id="inlineRadio2" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Игрушка "Сейлор Юпитер"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Игрушка "Сейлор Мун"' id="inlineRadio3" value="option3">
+  <label class="form-check-label" for="inlineRadio3">Игрушка "Сейлор Мун"</label>
+</div>
+        <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Фигурка "Чибиуса"' id="inlineRadio4" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Фигурка "Чибиуса"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Фигурки "Сейлор Венера"' id="inlineRadio5" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Фигурки "Сейлор Венера"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Фигурка "Усаги"' id="inlineRadio6" value="option3">
+  <label class="form-check-label" for="inlineRadio3">Фигурка "Усаги"</label>
+</div>
+          <input class="form-check-input" type="radio" name='Кружка "Сейлор Марс"' id="inlineRadio7" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Кружка "Сейлор Марс"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Кружка "Сейлор Мун"' id="inlineRadio8" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Кружка "Сейлор Мун"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Кружка "Сейлор Венера"' id="inlineRadio9" value="option3">
+  <label class="form-check-label" for="inlineRadio3">Кружка "Сейлор Венера"</label>
+</div>
+        <div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Газировка "Сейлор Мун"' id="inlineRadio10" value="option1">
+  <label class="form-check-label" for="inlineRadio1">Газировка "Сейлор Мун"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Газировка "Сейлор Юпитер"' id="inlineRadio11" value="option2">
+  <label class="form-check-label" for="inlineRadio2">Газировка "Сейлор Юпитер"</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name='Газировка "Сейлор Плутон"' id="inlineRadio12" value="option3">
+  <label class="form-check-label" for="inlineRadio3">Газировка "Сейлор Плутон"</label>
+</div>
+        <input type="hidden" id="custID" name="custId" value="3487">
+        <br>
+        <input class="btn btn-primary" type="submit" value="Отправить">
+        <input class="btn btn-primary" type="reset" value="Сбросить">
+    </form>
+</main>
+<footer>
+    <div class="card text-center">
+        <div class="card-body">
+            <a href="https://t.me/vrnkkkk" class="btn btn-primary" target="_blank">Telegram</a>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
